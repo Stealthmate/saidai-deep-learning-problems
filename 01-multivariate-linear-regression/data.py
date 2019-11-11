@@ -41,7 +41,7 @@ ax[0].set_title("成績 [基本情報技術概論]")
 ax[1].set_title("成績 [計算論]")
 plt.show()
 
-with open('data-2.csv', mode='w') as f:
+with open('data.csv', mode='w') as f:
     writer = csv.writer(f)
     for i in range(N):
         writer.writerow([ X[i][0], X[i][1], Y[i][0], Y[i][1] ])
